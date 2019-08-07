@@ -10,10 +10,10 @@ class Account
   end
 
   def console
-      puts 'Hello, we are RubyG bank!'
-      puts '- If you want to create account - press `create`'
-      puts '- If you want to load account - press `load`'
-      puts '- If you want to exit - press `exit`'
+    puts 'Hello, we are RubyG bank!'
+    puts '- If you want to create account - press `create`'
+    puts '- If you want to load account - press `load`'
+    puts '- If you want to exit - press `exit`'
 
     # FIRST SCENARIO. IMPROVEMENT NEEDED
 
@@ -133,21 +133,21 @@ class Account
       if ct == 'usual' || ct == 'capitalist' || ct == 'virtual'
         if ct == 'usual'
           card = {
-            type: 'usual',
-            number: 16.times.map{rand(10)}.join,
-            balance: 50.00
+              type: 'usual',
+              number: 16.times.map{rand(10)}.join,
+              balance: 50.00
           }
         elsif ct == 'capitalist'
           card = {
-            type: 'capitalist',
-            number: 16.times.map{rand(10)}.join,
-            balance: 100.00
+              type: 'capitalist',
+              number: 16.times.map{rand(10)}.join,
+              balance: 100.00
           }
         elsif ct == 'virtual'
           card = {
-            type: 'virtual',
-            number: 16.times.map{rand(10)}.join,
-            balance: 150.00
+              type: 'virtual',
+              number: 16.times.map{rand(10)}.join,
+              balance: 150.00
           }
         end
         cards = @current_account.card << card
